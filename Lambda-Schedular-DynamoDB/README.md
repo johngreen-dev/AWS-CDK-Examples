@@ -1,8 +1,14 @@
-# Welcome to your CDK TypeScript project
+# AWS CDK Lambda Scheduler Write to DynamoDB
 
-This is a blank project for CDK development with TypeScript.
+![Logo](https://greenchapeldev.files.wordpress.com/2022/08/diagram-edited.png)
 
-The `cdk.json` file tells the CDK Toolkit how to execute your app.
+[Read the blog post](https://greenchapel.dev/2022/08/19/aws-cdk-lambda-scheduler-write-to-dynamodb/)
+
+## Project commands
+
+* `npm run build`    to build the project and the project diagram
+* `npm run deploy`   deploy all the stacks in this project to the default AWS account
+* `npm run destroy`  take down all the stacks generated in this project
 
 ## Useful commands
 
