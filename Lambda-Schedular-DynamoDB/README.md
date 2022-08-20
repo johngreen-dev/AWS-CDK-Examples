@@ -1,8 +1,8 @@
 # AWS CDK Lambda Scheduler Write to DynamoDB
 
-![Logo](https://greenchapeldev.files.wordpress.com/2022/08/diagram-edited.png)
+[<img src="diagram.png" width="250"/>](image.png)
 
-[Read the blog post](https://greenchapel.dev/2022/08/19/aws-cdk-lambda-scheduler-write-to-dynamodb/)
+[Click to read the blog post on GreenChapel.dev](https://greenchapel.dev/2022/08/19/aws-cdk-lambda-scheduler-write-to-dynamodb/)
 
 ## Project commands
 
