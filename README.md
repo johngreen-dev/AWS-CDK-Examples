@@ -9,6 +9,12 @@ This repo is intended to contain AWS Serverless architecture patterns that have 
 If you are new to AWS CDK checkout the 
 [Getting started with the AWS CDK](https://docs.aws.amazon.com/cdk/v2/guide/getting_started.html)
 guide.
+
+## Sub-Projects
+Links to the blog posts for the sub projects inside this git repo:
+[Lambda-Schedular-DynamoDB](https://greenchapel.dev/2022/08/19/aws-cdk-lambda-scheduler-write-to-dynamodb/)
+
+
 ## 🔗 Links
 [GreenChapel Dev Blog](https://greenchapel.dev)
 
