@@ -3,12 +3,9 @@ import { Construct } from 'constructs';
 import {
   aws_lambda as lambda,
   aws_lambda_nodejs as lambdaNode,
-  aws_sns as sns,
-  aws_sns_subscriptions as subscriptions,
   aws_dynamodb as dynamodb,
   aws_events as events,
   aws_events_targets as targets,
-  aws_iam as iam,
   Duration,
   RemovalPolicy,
 } from 'aws-cdk-lib';
@@ -27,7 +24,7 @@ export class LambdaSchedularDynamoDbStack extends cdk.Stack {
     });
 
     
-    // Function called by schedular to Monitor the site
+    // Function called by schedular
     const triggeredEventFn = new lambdaNode.NodejsFunction(this, 'TriggerEventHandler', {
       runtime: lambda.Runtime.NODEJS_14_X,
       entry: 'lambda/writeToDynamo.ts',
