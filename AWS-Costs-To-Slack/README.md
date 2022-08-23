@@ -1,8 +1,15 @@
-# Welcome to your CDK TypeScript project
+# AWS CDK Costs to slack
+Built on the Lambda Schedular DynamoDB project
 
-This is a blank project for CDK development with TypeScript.
+[<img src="diagram.png" width="250"/>](image.png)
 
-The `cdk.json` file tells the CDK Toolkit how to execute your app.
+[Click to read the blog post on GreenChapel.dev](https://greenchapel.dev/2022/08/23/aws-cdk-costs-to-slack/)
+
+## Project commands
+
+* `npm run build`    to build the project and the project diagram
+* `npm run deploy`   deploy all the stacks in this project to the default AWS account
+* `npm run destroy`  take down all the stacks generated in this project
 
 ## Useful commands
 

@@ -17,6 +17,8 @@ Links to the blog posts for the sub projects inside this git repo:
 
 [Fargate-Schedular-DynamoDB](https://greenchapel.dev/2022/02/18/aws-cdk-fargate-schedular-write-to-dynamodb/)
 
+[AWS-Costs-To-Slack](https://greenchapel.dev/2022/08/23/aws-cdk-costs-to-slack/)
+
 
 ## 🔗 Links
 [GreenChapel Dev Blog](https://greenchapel.dev)
