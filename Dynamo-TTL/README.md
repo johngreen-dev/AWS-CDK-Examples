@@ -1,8 +1,14 @@
-# Welcome to your CDK TypeScript project
+# AWS CDK DynamoDB TTL
 
-This is a blank project for CDK development with TypeScript.
+[<img src="diagram.png" width="250"/>](image.png)
 
-The `cdk.json` file tells the CDK Toolkit how to execute your app.
+[Click to read the blog post on GreenChapel.dev](https://greenchapel.dev/2022/08/28/catch-dynamodb-ttl-delete-item-event/)
+
+## Project commands
+
+* `npm run build`    to build the project and the project diagram
+* `npm run deploy`   deploy all the stacks in this project to the default AWS account
+* `npm run destroy`  take down all the stacks generated in this project
 
 ## Useful commands
 

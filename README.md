@@ -19,6 +19,8 @@ Links to the blog posts for the sub projects inside this git repo:
 
 [AWS-Costs-To-Slack](https://greenchapel.dev/2022/08/23/aws-cdk-costs-to-slack/)
 
+[Dynamo-TTL](https://greenchapel.dev/2022/08/28/catch-dynamodb-ttl-delete-item-event/)
+
 
 ## 🔗 Links
 [GreenChapel Dev Blog](https://greenchapel.dev)
