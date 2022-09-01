@@ -17,6 +17,8 @@ Links to the blog posts for the sub projects inside this git repo:
 
 [Lambda-Schedular-DynamoDB](https://greenchapel.dev/2022/08/19/aws-cdk-lambda-scheduler-write-to-dynamodb/)
 
+[Website Monitoring](https://greenchapel.dev/2022/07/08/serverless-website-monitoring/)
+
 [Fargate-Schedular-DynamoDB](https://greenchapel.dev/2022/02/18/aws-cdk-fargate-schedular-write-to-dynamodb/)
 
 [AWS-Costs-To-Slack](https://greenchapel.dev/2022/08/23/aws-cdk-costs-to-slack/)
