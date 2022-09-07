@@ -1,0 +1,6 @@
+{
+  "hosted-zone:account=477039099532:domainName=cdk-saas.com:region=eu-west-2": {
+    "Id": "/hostedzone/Z0704906MJUWT4ME00FK",
+    "Name": "cdk-saas.com."
+  }
+}

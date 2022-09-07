@@ -1,0 +1,164 @@
+digraph "Diagram" {
+  splines = "ortho";
+  pad = "1.0";
+  nodesep = "0.60";
+  ranksep = "0.75";
+  fontname = "Sans-Serif";
+  fontsize = "15";
+  dpi = "200";
+  rankdir = "BT";
+  compound = "true";
+  fontcolor = "#222222";
+  edge [
+    color = "#D5871488",
+    penwidth = 2,
+    arrowhead = "dot",
+    arrowtail = "dot",
+  ];
+  node [
+    shape = "box",
+    style = "rounded",
+    fixedsize = true,
+    width = 1.7,
+    height = 1.7,
+    labelloc = "c",
+    imagescale = true,
+    fontname = "Sans-Serif",
+    fontsize = 8,
+    margin = 8,
+  ];
+  subgraph "CustomDomainWebServiceStack" {
+    subgraph "cluster-SubGraph.CustomDomainWebServiceStack" {
+      graph [
+        label = "CustomDomainWebServiceStack",
+        labelloc = "b",
+        labeljust = "l",
+        margin = "10",
+        fontsize = "16",
+        penwidth = "2",
+        pencolor = "#888888",
+        style = "filled,rounded",
+        fillcolor = "#e4e4e4",
+      ];
+      "CustomDomainWebServiceStack/LambdaFunctionHandler" [
+        label = "\nLambdaFunctionHandler",
+        fontsize = 12,
+        image = "C:\Users\johng\AppData\Local\npm-cache\_npx\b98735c91b702b55\node_modules\cdk-dia\icons\aws\Service\Arch_Compute\64\Arch_AWS-Lambda_64@5x.png",
+        imagescale = "true",
+        imagepos = "tc",
+        penwidth = "0",
+        shape = "node",
+        fixedsize = "true",
+        labelloc = "b",
+        width = 2,
+        height = 2.4819999999999998,
+      ];
+      "CustomDomainWebServiceStack/ApiGAteway" [
+        label = " ApiGAteway",
+        fontsize = 12,
+        image = "C:\Users\johng\AppData\Local\npm-cache\_npx\b98735c91b702b55\node_modules\cdk-dia\icons\aws\Service\Arch_Networking-Content\64\Arch_Amazon-API-Gateway_64@5x.png",
+        imagescale = "true",
+        imagepos = "tc",
+        penwidth = "0",
+        shape = "node",
+        fixedsize = "true",
+        labelloc = "b",
+        width = 1.2,
+        height = 1.466,
+      ];
+      "CustomDomainWebServiceStack/customDomain" [
+        label = " customDomain",
+        fontsize = 12,
+        image = "C:\Users\johng\AppData\Local\npm-cache\_npx\b98735c91b702b55\node_modules\cdk-dia\icons\aws\Service\Arch_Storage\64\Arch_AWS-Storage-Gateway_64@5x.png",
+        imagescale = "true",
+        imagepos = "tc",
+        penwidth = "0",
+        shape = "node",
+        fixedsize = "true",
+        labelloc = "b",
+        width = 2,
+        height = 2.266,
+      ];
+      "CustomDomainWebServiceStack/CustomBasePathMapping" [
+        label = "\nCustomBasePathMapping",
+        fontsize = 12,
+        image = "C:\Users\johng\AppData\Local\npm-cache\_npx\b98735c91b702b55\node_modules\cdk-dia\icons\aws\Service\Arch_Networking-Content\64\Arch_Amazon-API-Gateway_64@5x.png",
+        imagescale = "true",
+        imagepos = "tc",
+        penwidth = "0",
+        shape = "node",
+        fixedsize = "true",
+        labelloc = "b",
+        width = 1.2,
+        height = 1.682,
+      ];
+      "CustomDomainWebServiceStack/ApiGatewayRecordSet" [
+        label = " ApiGatewayRecordSet",
+        fontsize = 12,
+        image = "C:\Users\johng\AppData\Local\npm-cache\_npx\b98735c91b702b55\node_modules\cdk-dia\icons\aws\Resource\Res_Networking-and-Content-Delivery\Res_48_Dark\Res_Amazon-Route-53-Hosted-Zone_48_Dark_gen.png",
+        imagescale = "true",
+        imagepos = "tc",
+        penwidth = "0",
+        shape = "node",
+        fixedsize = "true",
+        labelloc = "b",
+        width = 1.2,
+        height = 1.466,
+      ];
+      subgraph "cluster-SubGraph.Certificate" {
+        graph [
+          label = "Certificate",
+          labelloc = "b",
+          labeljust = "l",
+          margin = "10",
+          fontsize = "16",
+          penwidth = "2",
+          pencolor = "#888888",
+          style = "filled,rounded",
+          fillcolor = "#d6d6d6",
+        ];
+        "CustomDomainWebServiceStack/Certificate/CertificateRequestorFunction" [
+          label = "\nCertificateRequestorF",
+          fontsize = 12,
+          image = "C:\Users\johng\AppData\Local\npm-cache\_npx\b98735c91b702b55\node_modules\cdk-dia\icons\aws\Service\Arch_Compute\64\Arch_AWS-Lambda_64@5x.png",
+          imagescale = "true",
+          imagepos = "tc",
+          penwidth = "0",
+          shape = "node",
+          fixedsize = "true",
+          labelloc = "b",
+          width = 2,
+          height = 2.4819999999999998,
+        ];
+        "CustomDomainWebServiceStack/Certificate/CertificateRequestorResource" [
+          label = " CloudFormation\nCustomResource",
+          fontsize = 12,
+          image = "C:\Users\johng\AppData\Local\npm-cache\_npx\b98735c91b702b55\node_modules\cdk-dia\icons\aws\Service\Arch_Management-Governance\64\Arch_AWS-CloudFormation_64@5x.png",
+          imagescale = "true",
+          imagepos = "tc",
+          penwidth = "0",
+          shape = "node",
+          fixedsize = "true",
+          labelloc = "b",
+          width = 1.2,
+          height = 1.682,
+        ];
+      }
+    }
+  }
+  "CustomDomainWebServiceStack/ApiGAteway" -> "CustomDomainWebServiceStack/LambdaFunctionHandler" [
+    dir = "both",
+  ];
+  "CustomDomainWebServiceStack/customDomain" -> "CustomDomainWebServiceStack/Certificate/CertificateRequestorResource" [
+    dir = "both",
+  ];
+  "CustomDomainWebServiceStack/CustomBasePathMapping" -> "CustomDomainWebServiceStack/ApiGAteway" [
+    dir = "both",
+  ];
+  "CustomDomainWebServiceStack/CustomBasePathMapping" -> "CustomDomainWebServiceStack/customDomain" [
+    dir = "both",
+  ];
+  "CustomDomainWebServiceStack/ApiGatewayRecordSet" -> "CustomDomainWebServiceStack/customDomain" [
+    dir = "both",
+  ];
+}

@@ -15,6 +15,8 @@ Links to the blog posts for the sub projects inside this git repo:
 
 [The-Simple-Web-Service](https://greenchapel.dev/2022/08/30/the-simple-web-service)
 
+[Custom-Domain-Web-Service](https://greenchapel.dev/2022/09/07/aws-cdk-api-gateway-custom-domain/)
+
 [Lambda-Schedular-DynamoDB](https://greenchapel.dev/2022/08/19/aws-cdk-lambda-scheduler-write-to-dynamodb/)
 
 [Website Monitoring](https://greenchapel.dev/2022/07/08/serverless-website-monitoring/)
