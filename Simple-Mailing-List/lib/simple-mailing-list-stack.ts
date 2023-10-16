@@ -42,7 +42,7 @@ export class SimpleMailingListStack extends cdk.Stack {
       },
       environment: {
         region: process.env.CDK_DEFAULT_REGION!,
-        contactLitsName: cfnContactList.contactListName!
+        contactListName: cfnContactList.contactListName!
       }
     });
 

@@ -15,10 +15,10 @@ export async function main(event: any, _context: Context, callback: Callback) {
         if (!body.email){
             throw(new Error("No Email Address"))
         }
-        console.log('process.env.contactLitsName', process.env.contactLitsName);
+        console.log('process.env.contactListName', process.env.contactListName);
 
         const command = new CreateContactCommand({
-                ContactListName: process.env.contactLitsName!,
+                ContactListName: process.env.contactListName!,
                 EmailAddress: body.email,
                 UnsubscribeAll: false,
                 TopicPreferences: [
