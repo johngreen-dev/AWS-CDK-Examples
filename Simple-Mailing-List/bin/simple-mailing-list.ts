@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 import 'source-map-support/register';
 import * as cdk from 'aws-cdk-lib';
-import { SimpleMailingListStack } from '../lib/simple_mailing_list-stack';
+import { SimpleMailingListStack } from '../lib/simple-mailing-list-stack';
 
 const app = new cdk.App();
 new SimpleMailingListStack(app, 'SimpleMailingListStack', {
